@@ -71,6 +71,50 @@
                     <div class="line"></div>
                 </div>
 
+
+    <div class="ob" style="background-image: url('media/top.jpeg'); background-size: cover; background-position: center; padding: 60px 20px; text-align: center; color: white;">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+        <!-- Main Title -->
+        <h1 class="opening-text" style="
+            margin-bottom: 30px;
+            font-size: 48px;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            -webkit-text-stroke: 1px black;
+            text-shadow: 2px 2px 2px #000;
+        ">
+            Wrekin College E-Learning Hub
+        </h1>
+
+        <!-- Google Search Bar -->
+        <form action="https://www.google.com/search" method="GET" target="_blank" style="display: flex; max-width: 600px; margin: 0 auto; gap: 0;">
+            <input type="text" name="q" placeholder="Search Google..." 
+                style="flex: 1; padding: 12px 15px; border-radius: 8px 0 0 8px; border: 1px solid #ccc; font-size: 16px; outline: none;">
+            <button type="submit"
+                style="padding: 12px 20px; border-radius: 0 8px 8px 0; border: none; background-color: #4285F4; color: white; font-size: 16px; cursor: pointer;">
+                Search
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Animation Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const openingText = document.querySelector('.opening-text');
+    setTimeout(() => {
+        openingText.style.opacity = '1';
+        openingText.style.transform = 'translateY(0)';
+    }, 500);
+});
+</script>
+
+
+
+                
+                <!---
                 <div class="ob" style="background-image: url('media/top.jpeg'); background-size: cover; background-position: center; padding: 40px 0; text-align: center;">
                 <div class="container">
                     <h1 class="opening-text" style="margin-bottom: 20px;">Wrekin College E-Learning-Hub</h1>
@@ -98,6 +142,7 @@
                 </div>
             </div>
         </div>
+        -->        
 
         <style>
             .menu-icon {
