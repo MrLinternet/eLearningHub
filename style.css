@@ -613,4 +613,15 @@ body {
         .container {
             margin: 0;
         }
-    }
+
+        .quicklinks {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 0 2rem;
+            display: flex;
+            gap: 0;
+            overflow-x: auto;
+            align-items: center;
+            justify-content: center;   /* centres links on desktop */
+            scrollbar-width: none;
+        }
